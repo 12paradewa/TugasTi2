@@ -4,10 +4,10 @@ int i, total;
 
   printf("Nilai Un= ");
 	for(i=0;i<n;i++){
-	 	awal=awal * rasio;
-	 	total= total+awal;
+	 	awal=awal * rasio; //a = awal b= rasio 
+	 	total= total+awal; //n  // n=a+(n-1)*b;
 
-printf(" %f  ", awal);
+printf(" %1.2f  ", awal);
 	 }
 return total;
 }
@@ -23,11 +23,11 @@ int main(){
 	 printf("Masukan nilai rasio (dalam desimal): ");
 	 scanf("%f", &rasio);
 	 printf("Masukan nilai n :");
-	 scanf("%d", &n);
+	 scanf("%f", &n);
 
      total = (n, rasio, awal);
 
-	 printf("Nilai total deret : %f",total);
+	 printf("Nilai total deret : %2.f", total);
 
 	 return 0;
 }
